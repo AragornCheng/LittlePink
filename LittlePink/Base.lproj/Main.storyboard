@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KAM-kc-Trw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RqQ-1y-MXC">
+            <objects>
+                <tabBarController id="KAM-kc-Trw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ik5-de-rI5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="ThemeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aOk-Xq-uQ5" kind="relationship" relationship="viewControllers" id="nDC-5q-XVf"/>
+                        <segue destination="fe3-bL-Ksg" kind="relationship" relationship="viewControllers" id="odg-LY-fkC"/>
+                        <segue destination="5qa-Tg-DnH" kind="relationship" relationship="viewControllers" id="JjJ-Pu-Liq"/>
+                        <segue destination="5Wy-KY-cLj" kind="relationship" relationship="viewControllers" id="nzd-cx-RD6"/>
+                        <segue destination="2rX-Je-IYx" kind="relationship" relationship="viewControllers" id="71y-As-En1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irw-c9-UvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-83"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="zr2-ZE-xlX">
+            <objects>
+                <viewController id="aOk-Xq-uQ5" customClass="HomeVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXr-GF-94P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZdN-5h-Kld" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wzH-md-6W1"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nwF-Yk-orh">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-UV-q5I">
+                                <rect key="frame" x="0.0" y="111" width="393" height="658"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Qpq-jZ-otn"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="I1e-GS-hXZ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l2z-SN-AQn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6cD-UV-q5I" firstAttribute="trailing" secondItem="l2z-SN-AQn" secondAttribute="trailing" id="LwK-QL-KYT"/>
+                            <constraint firstItem="l2z-SN-AQn" firstAttribute="trailing" secondItem="ZdN-5h-Kld" secondAttribute="trailing" id="Mij-f1-5jk"/>
+                            <constraint firstItem="ZdN-5h-Kld" firstAttribute="top" secondItem="l2z-SN-AQn" secondAttribute="top" id="ReH-ZP-QAQ"/>
+                            <constraint firstItem="6cD-UV-q5I" firstAttribute="leading" secondItem="l2z-SN-AQn" secondAttribute="leading" id="S1g-2X-nYM"/>
+                            <constraint firstItem="ZdN-5h-Kld" firstAttribute="leading" secondItem="l2z-SN-AQn" secondAttribute="leading" id="fBN-I6-Kgp"/>
+                            <constraint firstItem="6cD-UV-q5I" firstAttribute="bottom" secondItem="l2z-SN-AQn" secondAttribute="bottom" id="mce-Zy-FqK"/>
+                            <constraint firstItem="6cD-UV-q5I" firstAttribute="top" secondItem="ZdN-5h-Kld" secondAttribute="bottom" id="nGR-5W-F2E"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="首页" image="house.fill" catalog="system" id="jJf-Ma-JPn"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="ZdN-5h-Kld" id="T0n-Sr-phl"/>
+                        <outlet property="containerView" destination="6cD-UV-q5I" id="RZJ-qf-1Xb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojk-ep-QRT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498.47328244274809" y="734.50704225352115"/>
+        </scene>
+        <!--商城-->
+        <scene sceneID="B8i-vo-X4Y">
+            <objects>
+                <viewController id="fe3-bL-Ksg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pG8-sM-Vyp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="icD-xf-qUb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="商城" image="cart.fill" catalog="system" id="a7l-i2-ms7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6o-uT-XiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="735"/>
+        </scene>
+        <!--发布-->
+        <scene sceneID="kVo-JQ-1TA">
+            <objects>
+                <viewController id="5qa-Tg-DnH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LF4-89-3jV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hyy-bE-bv1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="发布" image="plus.rectangle.fill" catalog="system" id="rah-bA-QnZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbe-qg-eoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="735"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="Rzv-4x-SLN">
+            <objects>
+                <viewController id="5Wy-KY-cLj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s3P-7c-kY0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dOV-AS-XL6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="消息" image="message.fill" catalog="system" id="aDv-Dr-rtV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y05-XP-lUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="735"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="3dz-To-uaG">
+            <objects>
+                <viewController id="2rX-Je-IYx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y2U-X2-KWV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MSC-V4-DJ2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="person.fill" catalog="system" id="Bda-3e-xOt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ew0-HW-kfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477" y="735"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart.fill" catalog="system" width="32" height="32"/>
+        <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="ThemeColor">
+            <color red="0.80400002002716064" green="0.34099999070167542" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
