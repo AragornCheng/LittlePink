@@ -14,6 +14,10 @@
 		A05990D72BD9959C00A788C8 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A05990D52BD9959C00A788C8 /* LittlePink.xcdatamodeld */; };
 		A05990D92BD9959D00A788C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05990D82BD9959D00A788C8 /* Assets.xcassets */; };
 		A05990DC2BD9959D00A788C8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A05990DB2BD9959D00A788C8 /* Base */; };
+		A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */; };
+		A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */; };
+		A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE612BDF1D650015A13C /* NearByVC.swift */; };
+		A0B6AE642BDF1F4F0015A13C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE632BDF1F4F0015A13C /* Constants.swift */; };
 		A0EF06FC2BDDCA6200815214 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF06FB2BDDCA6200815214 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		A05990D82BD9959D00A788C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05990DB2BD9959D00A788C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05990DD2BD9959D00A788C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		A0B6AE612BDF1D650015A13C /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		A0B6AE632BDF1F4F0015A13C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0EF06FB2BDDCA6200815214 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,13 +93,25 @@
 				A05990CC2BD9959C00A788C8 /* AppDelegate.swift */,
 				A05990CE2BD9959C00A788C8 /* SceneDelegate.swift */,
 				A05990D22BD9959C00A788C8 /* Main.storyboard */,
-				A0EF06FB2BDDCA6200815214 /* HomeVC.swift */,
+				A0B6AE652BDF20BC0015A13C /* Home */,
+				A0B6AE632BDF1F4F0015A13C /* Constants.swift */,
 				A05990D82BD9959D00A788C8 /* Assets.xcassets */,
 				A05990DA2BD9959D00A788C8 /* LaunchScreen.storyboard */,
 				A05990DD2BD9959D00A788C8 /* Info.plist */,
 				A05990D52BD9959C00A788C8 /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		A0B6AE652BDF20BC0015A13C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */,
+				A0B6AE612BDF1D650015A13C /* NearByVC.swift */,
+				A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */,
+				A0EF06FB2BDDCA6200815214 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */,
 				A05990CD2BD9959C00A788C8 /* AppDelegate.swift in Sources */,
 				A0EF06FC2BDDCA6200815214 /* HomeVC.swift in Sources */,
+				A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */,
 				A05990CF2BD9959C00A788C8 /* SceneDelegate.swift in Sources */,
 				A05990D72BD9959C00A788C8 /* LittlePink.xcdatamodeld in Sources */,
+				A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */,
+				A0B6AE642BDF1F4F0015A13C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +299,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,7 +362,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
