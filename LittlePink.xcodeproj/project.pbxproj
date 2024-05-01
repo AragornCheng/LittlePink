@@ -106,10 +106,10 @@
 		A0B6AE652BDF20BC0015A13C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */,
-				A0B6AE612BDF1D650015A13C /* NearByVC.swift */,
-				A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */,
 				A0EF06FB2BDDCA6200815214 /* HomeVC.swift */,
+				A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */,
+				A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */,
+				A0B6AE612BDF1D650015A13C /* NearByVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
