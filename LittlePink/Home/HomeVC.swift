@@ -15,7 +15,6 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         
         // buttonBarItem -- 文本或图片的按钮
         self.settings.style.buttonBarItemBackgroundColor = .clear
-        self.settings.style.buttonBarItemTitleColor = .label
         self.settings.style.buttonBarItemFont = .systemFont(ofSize: 16)
         self.settings.style.buttonBarItemLeftRightMargin = 0
         // selectedBar -- 按钮下方的条

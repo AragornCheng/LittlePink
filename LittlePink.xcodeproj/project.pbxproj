@@ -18,6 +18,8 @@
 		A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */; };
 		A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE612BDF1D650015A13C /* NearByVC.swift */; };
 		A0B6AE642BDF1F4F0015A13C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE632BDF1F4F0015A13C /* Constants.swift */; };
+		A0E8FA5A2BE7D51B00B7E75D /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E8FA592BE7D51B00B7E75D /* WaterfallVC.swift */; };
+		A0E8FA5C2BE7DA2900B7E75D /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E8FA5B2BE7DA2900B7E75D /* WaterfallCell.swift */; };
 		A0EF06FC2BDDCA6200815214 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF06FB2BDDCA6200815214 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A0B6AE612BDF1D650015A13C /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
 		A0B6AE632BDF1F4F0015A13C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0E8FA592BE7D51B00B7E75D /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		A0E8FA5B2BE7DA2900B7E75D /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
 		A0EF06FB2BDDCA6200815214 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 				A05990CC2BD9959C00A788C8 /* AppDelegate.swift */,
 				A05990CE2BD9959C00A788C8 /* SceneDelegate.swift */,
 				A05990D22BD9959C00A788C8 /* Main.storyboard */,
+				A0E8FA592BE7D51B00B7E75D /* WaterfallVC.swift */,
+				A0E8FA5B2BE7DA2900B7E75D /* WaterfallCell.swift */,
 				A0B6AE652BDF20BC0015A13C /* Home */,
 				A0B6AE632BDF1F4F0015A13C /* Constants.swift */,
 				A05990D82BD9959D00A788C8 /* Assets.xcassets */,
@@ -231,11 +237,13 @@
 			files = (
 				A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */,
 				A05990CD2BD9959C00A788C8 /* AppDelegate.swift in Sources */,
+				A0E8FA5C2BE7DA2900B7E75D /* WaterfallCell.swift in Sources */,
 				A0EF06FC2BDDCA6200815214 /* HomeVC.swift in Sources */,
 				A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */,
 				A05990CF2BD9959C00A788C8 /* SceneDelegate.swift in Sources */,
 				A05990D72BD9959C00A788C8 /* LittlePink.xcdatamodeld in Sources */,
 				A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */,
+				A0E8FA5A2BE7D51B00B7E75D /* WaterfallVC.swift in Sources */,
 				A0B6AE642BDF1F4F0015A13C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

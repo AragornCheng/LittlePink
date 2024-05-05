@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -138,7 +139,7 @@
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -168,6 +169,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53c-OV-cLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-498.47328244274809" y="1485.9154929577467"/>
+        </scene>
+        <!--WaterfallVC-->
+        <scene sceneID="9zH-kk-jou">
+            <objects>
+                <collectionViewController storyboardIdentifier="WaterfallVCID" id="bfd-R3-OLc" customClass="WaterfallVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wYl-5T-yoF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="wUk-en-Vbp" customClass="CHTCollectionViewWaterfallLayout" customModule="CHTCollectionViewWaterfallLayout"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WaterfallCellID" id="xqC-nr-2L8" customClass="WaterfallCell" customModule="LittlePink" customModuleProvider="target">
+                                <rect key="frame" x="67.666666666666671" y="0.0" width="258" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bv4-UM-SBP">
+                                    <rect key="frame" x="0.0" y="0.0" width="258" height="265"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfI-XC-y1o">
+                                            <rect key="frame" x="0.0" y="0.0" width="258" height="265"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="AfI-XC-y1o" secondAttribute="bottom" id="GKK-gu-YJy"/>
+                                        <constraint firstAttribute="trailing" secondItem="AfI-XC-y1o" secondAttribute="trailing" id="LeJ-c2-mfE"/>
+                                        <constraint firstItem="AfI-XC-y1o" firstAttribute="top" secondItem="bv4-UM-SBP" secondAttribute="top" id="RyA-oB-BYq"/>
+                                        <constraint firstItem="AfI-XC-y1o" firstAttribute="leading" secondItem="bv4-UM-SBP" secondAttribute="leading" id="t2W-Bk-Fyi"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="258" height="265"/>
+                                <connections>
+                                    <outlet property="imageview" destination="AfI-XC-y1o" id="yga-ZC-CMN"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bfd-R3-OLc" id="E7A-BF-vZG"/>
+                            <outlet property="delegate" destination="bfd-R3-OLc" id="Tya-TM-rMH"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Om-CL-2HZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498.47328244274809" y="2190.8450704225352"/>
         </scene>
         <!--Near ByVC-->
         <scene sceneID="XyU-po-hSF">
@@ -250,8 +295,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cart.fill" catalog="system" width="32" height="32"/>
-        <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
