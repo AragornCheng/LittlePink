@@ -16,6 +16,7 @@
 		A05990DC2BD9959D00A788C8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A05990DB2BD9959D00A788C8 /* Base */; };
 		A06619932BEEF08700C36AE8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A06619922BEEF08700C36AE8 /* Localizable.xcstrings */; };
 		A06619962BEFC60800C36AE8 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */; };
+		A066199F2BEFD16700C36AE8 /* Main.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A066199E2BEFD16700C36AE8 /* Main.xcstrings */; };
 		A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */; };
 		A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */; };
 		A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE612BDF1D650015A13C /* NearByVC.swift */; };
@@ -38,10 +39,9 @@
 		A05990D82BD9959D00A788C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05990DB2BD9959D00A788C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05990DD2BD9959D00A788C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A06619902BEEF00000C36AE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		A06619912BEEF00000C36AE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A06619922BEEF08700C36AE8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		A066199E2BEFD16700C36AE8 /* Main.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Main.xcstrings; sourceTree = "<group>"; };
 		A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A0B6AE612BDF1D650015A13C /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
@@ -115,6 +115,7 @@
 				A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */,
 				A05990D52BD9959C00A788C8 /* LittlePink.xcdatamodeld */,
 				A06619922BEEF08700C36AE8 /* Localizable.xcstrings */,
+				A066199E2BEFD16700C36AE8 /* Main.xcstrings */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -214,6 +215,7 @@
 				A05990DC2BD9959D00A788C8 /* Base in Resources */,
 				A0D454442BED9AAD00BD0943 /* README.md in Resources */,
 				A05990D42BD9959C00A788C8 /* Base in Resources */,
+				A066199F2BEFD16700C36AE8 /* Main.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +288,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A05990D32BD9959C00A788C8 /* Base */,
-				A06619902BEEF00000C36AE8 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -295,7 +296,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A05990DB2BD9959D00A788C8 /* Base */,
-				A06619912BEEF00000C36AE8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
