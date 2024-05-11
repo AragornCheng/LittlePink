@@ -106,18 +106,26 @@
 				A05990CC2BD9959C00A788C8 /* AppDelegate.swift */,
 				A05990CE2BD9959C00A788C8 /* SceneDelegate.swift */,
 				A05990D22BD9959C00A788C8 /* Main.storyboard */,
+				A066199E2BEFD16700C36AE8 /* Main.xcstrings */,
 				A0B6AE652BDF20BC0015A13C /* Home */,
 				A0D454412BED9A2A00BD0943 /* Waterfall */,
 				A0D454422BED9A4900BD0943 /* Common */,
 				A05990D82BD9959D00A788C8 /* Assets.xcassets */,
 				A05990DA2BD9959D00A788C8 /* LaunchScreen.storyboard */,
 				A05990DD2BD9959D00A788C8 /* Info.plist */,
-				A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */,
+				A06619A02BEFD39B00C36AE8 /* Resources */,
 				A05990D52BD9959C00A788C8 /* LittlePink.xcdatamodeld */,
-				A06619922BEEF08700C36AE8 /* Localizable.xcstrings */,
-				A066199E2BEFD16700C36AE8 /* Main.xcstrings */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		A06619A02BEFD39B00C36AE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */,
+				A06619922BEEF08700C36AE8 /* Localizable.xcstrings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A0B6AE652BDF20BC0015A13C /* Home */ = {
