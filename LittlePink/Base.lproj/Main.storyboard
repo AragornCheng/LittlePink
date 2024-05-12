@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab BarC-->
         <scene sceneID="RqQ-1y-MXC">
             <objects>
-                <tabBarController id="KAM-kc-Trw" sceneMemberID="viewController">
+                <tabBarController id="KAM-kc-Trw" customClass="TabBarC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ik5-de-rI5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -248,7 +248,7 @@
         <!--发布-->
         <scene sceneID="kVo-JQ-1TA">
             <objects>
-                <viewController id="5qa-Tg-DnH" sceneMemberID="viewController">
+                <viewController id="5qa-Tg-DnH" customClass="PostVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LF4-89-3jV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

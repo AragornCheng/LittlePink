@@ -17,6 +17,9 @@
 		A06619932BEEF08700C36AE8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A06619922BEEF08700C36AE8 /* Localizable.xcstrings */; };
 		A06619962BEFC60800C36AE8 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */; };
 		A066199F2BEFD16700C36AE8 /* Main.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A066199E2BEFD16700C36AE8 /* Main.xcstrings */; };
+		A06619A22BEFD9E600C36AE8 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06619A12BEFD9E600C36AE8 /* TabBarC.swift */; };
+		A06619A42BEFDC0800C36AE8 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06619A32BEFDC0800C36AE8 /* PostVC.swift */; };
+		A06619A62BEFE6F800C36AE8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06619A52BEFE6F800C36AE8 /* Extensions.swift */; };
 		A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */; };
 		A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */; };
 		A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6AE612BDF1D650015A13C /* NearByVC.swift */; };
@@ -42,6 +45,10 @@
 		A06619922BEEF08700C36AE8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A06619952BEFC60800C36AE8 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		A066199E2BEFD16700C36AE8 /* Main.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Main.xcstrings; sourceTree = "<group>"; };
+		A06619A12BEFD9E600C36AE8 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		A06619A32BEFDC0800C36AE8 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		A06619A52BEFE6F800C36AE8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A06619A82BF04EAB00C36AE8 /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A0B6AE5D2BDF1D390015A13C /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		A0B6AE5F2BDF1D5B0015A13C /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A0B6AE612BDF1D650015A13C /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
@@ -106,6 +113,7 @@
 				A05990CC2BD9959C00A788C8 /* AppDelegate.swift */,
 				A05990CE2BD9959C00A788C8 /* SceneDelegate.swift */,
 				A05990D22BD9959C00A788C8 /* Main.storyboard */,
+				A06619A12BEFD9E600C36AE8 /* TabBarC.swift */,
 				A066199E2BEFD16700C36AE8 /* Main.xcstrings */,
 				A0B6AE652BDF20BC0015A13C /* Home */,
 				A0D454412BED9A2A00BD0943 /* Waterfall */,
@@ -114,6 +122,7 @@
 				A05990DA2BD9959D00A788C8 /* LaunchScreen.storyboard */,
 				A05990DD2BD9959D00A788C8 /* Info.plist */,
 				A06619A02BEFD39B00C36AE8 /* Resources */,
+				A06619A72BF04E6D00C36AE8 /* Demos+PH */,
 				A05990D52BD9959C00A788C8 /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
@@ -126,6 +135,15 @@
 				A06619922BEEF08700C36AE8 /* Localizable.xcstrings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A06619A72BF04E6D00C36AE8 /* Demos+PH */ = {
+			isa = PBXGroup;
+			children = (
+				A06619A32BEFDC0800C36AE8 /* PostVC.swift */,
+				A06619A82BF04EAB00C36AE8 /* Closure.playground */,
+			);
+			path = "Demos+PH";
 			sourceTree = "<group>";
 		};
 		A0B6AE652BDF20BC0015A13C /* Home */ = {
@@ -152,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A0B6AE632BDF1F4F0015A13C /* Constants.swift */,
+				A06619A52BEFE6F800C36AE8 /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -277,11 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B6AE622BDF1D650015A13C /* NearByVC.swift in Sources */,
+				A06619A22BEFD9E600C36AE8 /* TabBarC.swift in Sources */,
 				A05990CD2BD9959C00A788C8 /* AppDelegate.swift in Sources */,
 				A0E8FA5C2BE7DA2900B7E75D /* WaterfallCell.swift in Sources */,
 				A0EF06FC2BDDCA6200815214 /* HomeVC.swift in Sources */,
 				A0B6AE5E2BDF1D390015A13C /* FollowVC.swift in Sources */,
+				A06619A42BEFDC0800C36AE8 /* PostVC.swift in Sources */,
 				A05990CF2BD9959C00A788C8 /* SceneDelegate.swift in Sources */,
+				A06619A62BEFE6F800C36AE8 /* Extensions.swift in Sources */,
 				A05990D72BD9959C00A788C8 /* LittlePink.xcdatamodeld in Sources */,
 				A0B6AE602BDF1D5B0015A13C /* DiscoveryVC.swift in Sources */,
 				A0E8FA5A2BE7D51B00B7E75D /* WaterfallVC.swift in Sources */,
